@@ -1,4 +1,4 @@
-internal enum TollFreeVehicles
+public enum TollFreeVehicles
 {
     Motorcycle = 0,
     Tractor = 1,

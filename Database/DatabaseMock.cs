@@ -1,13 +1,13 @@
-﻿using congestion.calculator.Domain;
+using congestion.calculator.Domain;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 
-internal class DatabaseMock
+public class DatabaseMock : IDatabase
 {
-    public List<BaseInfoHoliday> Holidaies = new List<BaseInfoHoliday>();
-    public List<BaseInfoTollPriceConfig> TollPriceConfigs = new List<BaseInfoTollPriceConfig>();
+    public List<BaseInfoHoliday> Holidaies { get; private set; }
+    public List<BaseInfoTollPriceConfig> TollPriceConfigs { get; private set; }
 
 
     public DatabaseMock()
